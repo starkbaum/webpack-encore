@@ -58,6 +58,7 @@ Encore
 
     // enables Sass/SCSS support
     .enableSassLoader()
+    .enablePostCssLoader()
 
     //helps copy files
     .copyFiles({
