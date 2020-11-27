@@ -6,10 +6,10 @@
  */
 
 // any CSS you import will output into a single css file (app.scss in this case)
-import './styles/app.scss';
+import '../styles/app.scss';
 
 //const getNiceMessage = require('./get_a_nice_message');
-import getNiceMessage from './get_a_nice_message';
+import getNiceMessage from './components/get_a_nice_message';
 import $ from 'jquery';
 import 'bootstrap'; // adds function to jQuery
 //uncomment to support legacy code
