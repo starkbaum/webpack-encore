@@ -10,6 +10,9 @@ import './styles/app.css';
 
 //const getNiceMessage = require('./get_a_nice_message');
 import getNiceMessage from './get_a_nice_message';
+import $ from 'jquery';
+//uncomment to support legacy code
+//global.$ = $;
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to import it.
 // import $ from 'jquery';
