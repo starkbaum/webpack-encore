@@ -27,5 +27,8 @@
     },
     "dependencies": {
         "popper.js": "^1.16.1"
-    }
+    },
+    "browserslist": [
+        "> 5%"
+    ]
 }
