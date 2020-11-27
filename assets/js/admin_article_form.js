@@ -48,6 +48,9 @@ $(document).ready(function() {
 class ReferenceList
 {
     constructor($element) {
+
+        var stuff = new WeakSet([]);
+
         this.$element = $element;
         this.sortable = Sortable.create(this.$element[0], {
             handle: '.drag-handle',
