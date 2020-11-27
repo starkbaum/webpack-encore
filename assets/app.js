@@ -11,10 +11,20 @@ import './styles/app.css';
 //const getNiceMessage = require('./get_a_nice_message');
 import getNiceMessage from './get_a_nice_message';
 import $ from 'jquery';
+import 'bootstrap'; // adds function to jQuery
 //uncomment to support legacy code
 //global.$ = $;
+
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to import it.
 // import $ from 'jquery';
 
 console.log(getNiceMessage(5));
+
+$('.dropdown-toggle').dropdown();
+$('.custom-file-input').on('change', function(event) {
+    var inputFile = event.currentTarget;
+    $(inputFile).parent()
+        .find('.custom-file-label')
+        .html(inputFile.files[0].name);
+});
