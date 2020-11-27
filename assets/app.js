@@ -8,7 +8,10 @@
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.css';
 
+//const getNiceMessage = require('./get_a_nice_message');
+import getNiceMessage from './get_a_nice_message';
+
 // Need jQuery? Install it with "yarn add jquery", then uncomment to import it.
 // import $ from 'jquery';
 
-console.log('Hello Webpack Encore! Edit me in assets/app.js');
+console.log(getNiceMessage(5));
